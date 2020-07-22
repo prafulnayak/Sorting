@@ -12,6 +12,15 @@ public class BubbleSort {
                 }
             }
         }
+
+        for(int i =0; i< n ; i++){
+            if(i ==0 && arr[i]>=1){
+                arr[i] = 1;
+            }else {
+                if(arr[i]-arr[i-1] >1)
+                    arr[i] = arr[i-1] +1;
+            }
+        }
     }
     void printArray(int arr[])
     {

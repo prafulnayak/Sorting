@@ -16,7 +16,7 @@ public class Sorting {
         //bubble sort
         System.out.print("BubbleSort\n");
         BubbleSort bubbleSort = new BubbleSort();
-        int [] arr1 = {10,5,6,4,2,9};
+        int [] arr1 = {3,2,3,5};
         bubbleSort.sort(arr1);
         bubbleSort.printArray(arr1);
 
@@ -34,6 +34,12 @@ public class Sorting {
         heapSort.sort(arr3);
         HeapSort.printArray(arr3);
 
+        //Heap Sort
+        System.out.print("Quick Sort\n");
+        QuickSort quickSort = new QuickSort();
+        int [] arr4 = {500,1,50,1,30,-1,20,15,10,5,8,16,60, 1,7,8,490};
+        quickSort.sort(arr4, 0,arr4.length);
+        quickSort.printArray(arr4);
         //Subarray with given sum
         /*
         Given an unsorted array A of size N of non-negative integers, find a continuous sub-array which adds to a given number S.
